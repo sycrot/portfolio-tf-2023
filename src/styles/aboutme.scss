@@ -1,0 +1,146 @@
+#aboutme {
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+
+  .title-section {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $min-width) {
+      margin-bottom: 58px;
+      margin-top: 11px;
+    }
+  }
+
+  p {
+    color: $color-darkblue;
+  }
+
+  .content {
+    max-width: 945px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    padding-bottom: 20px;
+
+    .row {
+      position: relative;
+      @media screen and (min-width: $min-width) {
+        &::after {
+          content: url('/assets/images/aboutme-l.png');
+          display: block;
+          width: 478px;
+          position: absolute;
+          right: -500px;
+        }
+      }
+    }
+  }
+
+  .timeline-item {
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 100%;
+      background: $color-superlightgray;
+      margin-top: 5px;
+    }
+
+    &:nth-child(4) {
+      padding-left: 24px;
+      &::before {
+        display: none;
+      }
+
+      @media screen and (min-width: $min-width) {
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+      }
+    }
+
+    @media screen and (min-width: $min-width) {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+
+      &::before {
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        top: 5px;
+      }
+    }
+  }
+
+  .timeline-content {
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $min-width) {
+      padding-bottom: 0;
+    }
+    .timeline-year {
+      display: flex;
+      align-items: center;
+      margin-left: -12px;
+
+      span {
+        margin-left: 4px;
+        font-size: 18px;
+        color: $color-simpleblue;
+        font-weight: 500;
+        font-family: 'Kanit', sans-serif;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: $color-simpleblue;
+        border-radius: 50%;
+      }
+
+      @media screen and (min-width: $min-width) {
+        display: block;
+        margin-left: 0;
+        margin-top: -23.5px;
+
+        span {
+          margin-left: 0;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          position: relative;
+          width: 20px;
+          height: 20px;
+          background: $color-simpleblue;
+          border-radius: 50%;
+          z-index: 10;
+        }
+      }
+    }
+
+    .timeline-text {
+      padding-left: 10px;
+
+      p {
+        margin-top: 18px;
+      }
+
+      @media screen and (min-width: $min-width) {
+        padding-left: 0;
+        max-width: 210px;
+      }
+    }
+  }
+}

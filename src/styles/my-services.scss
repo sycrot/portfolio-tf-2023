@@ -1,0 +1,33 @@
+#myServices {
+  margin-top: 160px;
+
+  .my-service-item-1 {
+    img {
+      margin-left: -110px;
+
+      @media screen and (min-width: $min-width) {
+        width: 100%;
+        height: inherit;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .my-service-item-2 {
+    margin-top: 70px;
+
+    @media screen and (min-width: $min-width) {
+      margin-top: 0;
+    }
+
+    img {
+      margin-left: -30px;
+
+      @media screen and (min-width: $min-width) {
+        width: 100%;
+        height: inherit;
+        margin-left: 0;
+      }
+    }
+  }
+}

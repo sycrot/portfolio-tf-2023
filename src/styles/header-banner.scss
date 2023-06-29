@@ -1,0 +1,101 @@
+.header-banner {
+  background: $color-darkblue;
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
+
+  .container {
+    @media screen and (min-width: $min-width) {
+      max-width: 1105px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .image-header-banner {
+    display: block;
+    width: 254px;
+    height: 254px;
+    background-image: url('/assets/images/banner-image-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: -100px;
+
+    @media screen and (min-width: $min-width) {
+      width: 599px;
+      height: 504px;
+      background-image: url('/assets/images/banner-image-desktop.png');
+      margin-left: 0;
+    }
+  }
+
+  .col-8 {
+    display: flex;
+    justify-content: end;
+  }
+
+  .content {
+    padding: 68px 0px;
+
+    @media screen and (min-width: $min-width) {
+      padding: 115px 0;
+    }
+
+    p,
+    h1 {
+      font-weight: bold;
+    }
+
+    p {
+      @media screen and (min-width: $min-width) {
+        font-size: 40px;
+        line-height: 1;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+
+      @media screen and (min-width: $min-width) {
+        font-size: 70px;
+      }
+    }
+
+    .button-gradient {
+      display: block;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      font-weight: bold;
+      margin-top: 11px;
+      padding: 10px 25px;
+      background: linear-gradient(90deg, rgba(10, 114, 207, 1), rgba(25, 79, 135, 1));
+      box-shadow: 0px 4px 16px 0px rgba(10, 114, 207, 0.12);
+      border-radius: 6px;
+
+      @media screen and (min-width: $min-width) {
+        padding: 16px 63px;
+        margin-top: 50px;
+      }
+    }
+
+    .button-rounded-git {
+      display: block;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: url('/assets/images/github-icon-white.png') 90%, linear-gradient(271deg, #085AB0 0%, #144272 78.65%) 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 11px;
+      margin-left: 4px;
+
+      @media screen and (min-width: $min-width) {
+        width: 48px;
+        height: 48px;
+        margin-top: 50px;
+        margin-left: 18px;
+      }
+    }
+  }
+}

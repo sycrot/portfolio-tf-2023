@@ -1,0 +1,52 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px !important;
+
+  button {
+    border: 2px solid $color-superlightgray;
+    border-radius: 50%;
+    outline: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: $color-gray;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    margin: 0 5px;
+
+    &.active {
+      border: 2px solid $color-blue;
+      color: $color-blue
+    }
+
+    &.button-prev {
+      border: none;
+      background: url('/assets/images/arrow-left.png') no-repeat;
+      background-size: 100%;
+      margin: 0;
+      margin-right: 23px;
+
+      &.disabled {
+        filter: grayscale(100%);
+        opacity: .4;
+      }
+    }
+
+    &.button-next {
+      border: none;
+      background: url('/assets/images/arrow-right.png') no-repeat;
+      background-size: 100%;
+      margin: 0;
+      margin-left: 23px;
+      &.disabled {
+        filter: grayscale(100%);
+        opacity: .4;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+#skills {
+  margin-top: 160px;
+
+  .title-section {
+    margin-bottom: 22px;
+  }
+
+  .skill-item {
+    margin-top: 30px;
+  }
+
+  .levels {
+    position: relative;
+
+    .levels-content {
+      display: flex;
+      gap: 7px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .box-level {
+      width: 45px;
+      height: 20px;
+      border-radius: 4px;
+      background: $color-gray-9d;
+    }
+
+    .box-level-1 {
+      background: $color-simpleblue-1;
+    }
+
+    .box-level-2 {
+      background: $color-simpleblue-2;
+    }
+
+    .box-level-3 {
+      background: $color-simpleblue-3;
+    }
+
+    .box-level-4 {
+      background: $color-simpleblue-4;
+    }
+
+    .box-level-5 {
+      background: $color-simpleblue-5;
+    }
+
+    .mask-levels {
+      display: flex;
+      position: absolute;
+      gap: 7px;
+      top: 0;
+    }
+  }
+}
