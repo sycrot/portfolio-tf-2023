@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Logo from '../../public/assets/images/logo.png'
 import MenuIcon from '../../public/assets/images/menu-icon.png'
+import 'bootstrap/js/dist/collapse'
 
 export default function Nav() {
   return (
