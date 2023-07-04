@@ -3,6 +3,7 @@ import Aboutme from "./aboutme";
 import Portfolio from "./portfolio";
 import Skills from "./skills";
 import MyServices from "./my-services";
+import Footer from "./footer";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Portfolio />
       <Skills />
       <MyServices />
+      <Footer />
     </main>
   )
 }

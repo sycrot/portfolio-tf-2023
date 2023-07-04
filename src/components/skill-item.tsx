@@ -70,10 +70,21 @@ function Levels(numLevels: number) {
     levels.push(i);
   }
 
+  const handleTag = () => {
+    let numLevels = levels.length
+    return `${numLevels === 2 ? 'Júnior': ''}
+    ${numLevels === 3 ? 'Intermediário': ''}
+    ${numLevels === 4 ? 'Intermediário / avançado': ''}
+    ${numLevels === 5 ? 'Avançado': ''}`
+  }
+
   return (
-    levels.map(level => (
-      <div key={level} className={`box-level box-level-${level}`}></div>
-    ))
+    <div 
+      className={`levels-content tag-${levels.length}`}>
+      {levels.map(level => (
+        <div key={level} className={`box-level box-level-${level}`} aria-label={handleTag()}></div>
+      ))}
+    </div>
   )
 }
 
@@ -94,9 +105,7 @@ export default function SkillItem() {
               <p className="font-s16 fw-bold color-simpleblue mb-2">{value.name}</p>
 
               <div className="levels">
-                <div className="levels-content">
-                  {Levels(value.level)}
-                </div>
+                {Levels(value.level)}
 
                 <div className="mask-levels">
                   <div className={`box-level`}></div>

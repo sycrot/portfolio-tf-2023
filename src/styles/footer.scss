@@ -1,0 +1,96 @@
+footer {
+  margin-top: 200px;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  #contactMe {
+    margin-bottom: -123px;
+    .box-bluelight {
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      background: $color-superlight-blue;
+      padding: 30px 60px;
+      border-radius: 18px;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+      position: relative;
+
+      @media screen and (min-width: $min-width) {
+        max-width: 876px;
+        padding: 60px 20px;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 107px;
+          height: 107px;
+          border-radius: 50%;
+          background: $color-dark-lightblue;
+          position: absolute;
+          top: 34px;
+          right: -80px;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 169px;
+          height: 121px;
+          border-radius: 26px;
+          background: $color-blue;
+          position: absolute;
+          left: -110px;
+          bottom: 44px;
+        }
+      }
+
+      .content {
+        margin-top: 36px;
+
+        @media screen and (min-width: $min-width) {
+          margin-top: 50px;
+        }
+
+        a {
+          color: $color-simpleblue;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    background: $color-darkblue;
+    padding: 200px 40px 70px;
+    text-align: center;
+
+    @media screen and (min-width: $min-width) {
+      text-align: start;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    img {
+      width: 100%;
+      max-width: 252px;
+      height: inherit;
+    }
+  }
+
+  .footer-bottom {
+    background: $color-darkblue-3;
+    padding: 18px 0;
+  }
+
+  .section-footer {
+    margin-top: 64px;
+  }
+}

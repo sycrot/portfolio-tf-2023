@@ -1,12 +1,19 @@
 #myServices {
-  margin-top: 160px;
+  margin-top: 65px;
+  padding-top: 95px;
+
+  .title-section {
+    @media screen and (min-width: $min-width) {
+      margin-bottom: 62px;
+    }
+  }
 
   .my-service-item-1 {
     img {
       margin-left: -110px;
 
       @media screen and (min-width: $min-width) {
-        width: 100%;
+        width: 215px;
         height: inherit;
         margin-left: 0;
       }
@@ -24,7 +31,7 @@
       margin-left: -30px;
 
       @media screen and (min-width: $min-width) {
-        width: 100%;
+        width: 215px;
         height: inherit;
         margin-left: 0;
       }

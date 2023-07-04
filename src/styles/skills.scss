@@ -1,8 +1,13 @@
 #skills {
-  margin-top: 160px;
+  margin-top: 65px;
+  padding-top: 95px;
 
   .title-section {
     margin-bottom: 22px;
+
+    @media screen and (min-width: $min-width) {
+      margin-bottom: 46px;
+    }
   }
 
   .skill-item {
@@ -17,6 +22,141 @@
       gap: 7px;
       position: relative;
       z-index: 10;
+
+      
+      @media screen and (min-width: $min-width) {
+        &.tag-2 {
+          &:hover {
+            .box-level-2 {
+              position: relative;
+
+              &::after {
+                content: '' attr(aria-label)'';
+                max-width: 130px;
+                color: $color-darkblue;
+                display: block;
+                background: $color-superlight-blue-2;
+                border-radius: 6px;
+                padding: 5px 16px;
+                position: absolute;
+                top: -50px;
+                left: 0;
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                left: 30%;
+                transform: rotate(45deg);
+                position: absolute;
+                background: $color-superlight-blue-2;
+              }
+            }
+          }
+        }
+
+        &.tag-3 {
+          &:hover {
+            .box-level-3 {
+              position: relative;
+
+              &::after {
+                content: '' attr(aria-label)'';
+                max-width: 130px;
+                color: $color-darkblue;
+                display: block;
+                background: $color-superlight-blue-2;
+                border-radius: 6px;
+                padding: 5px 16px;
+                position: absolute;
+                top: -50px;
+                left: 0;
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                left: 30%;
+                transform: rotate(45deg);
+                position: absolute;
+                background: $color-superlight-blue-2;
+              }
+            }
+          }
+        }
+
+        &.tag-4 {
+          &:hover {
+            .box-level-4 {
+              position: relative;
+
+              &::after {
+                content: '' attr(aria-label)'';
+                max-width: 130px;
+                color: $color-darkblue;
+                display: block;
+                background: $color-superlight-blue-2;
+                border-radius: 6px;
+                padding: 5px 16px;
+                position: absolute;
+                top: -75px;
+                left: 0;
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                left: 30%;
+                transform: rotate(45deg);
+                position: absolute;
+                background: $color-superlight-blue-2;
+              }
+            }
+          }
+        }
+
+        &.tag-5 {
+          &:hover {
+            .box-level-5 {
+              position: relative;
+
+              &::after {
+                content: '' attr(aria-label)'';
+                max-width: 130px;
+                color: $color-darkblue;
+                display: block;
+                background: $color-superlight-blue-2;
+                border-radius: 6px;
+                padding: 5px 16px;
+                position: absolute;
+                top: -50px;
+                left: 0;
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                left: 30%;
+                transform: rotate(45deg);
+                position: absolute;
+                background: $color-superlight-blue-2;
+              }
+            }
+          }
+        }
+      }
     }
 
     .box-level {

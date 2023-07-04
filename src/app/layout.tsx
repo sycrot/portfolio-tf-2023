@@ -3,6 +3,8 @@ import Nav from "@/components/navbar"
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.scss'
 import Script from "next/script"
+import Footer from "./footer"
+import { NextSeo } from "next-seo"
 
 export const metadata = {
   title: 'Portfolio TF',
@@ -19,11 +21,6 @@ export default function RootLayout({
       <body>
         <Nav />
         {children}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   )

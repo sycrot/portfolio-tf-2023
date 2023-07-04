@@ -1,0 +1,92 @@
+#projectPortfolio {
+  .header-project {
+    background-color: $color-darkblue;
+    padding: 64px 0 48px;
+    border-radius: 0 0 18px 18px;
+    margin-bottom: 64px;
+    overflow: hidden;
+
+    @media screen and (min-width: $min-width) {
+      padding: 117px 0 48px;
+
+      .container {
+        position: relative;
+
+        &::after {
+          content: url('/assets/images/project-header.png');
+          display: block;
+          position: absolute;
+          right: 0;
+          top: -60px;
+        }
+      }
+    }
+
+    p {
+      color: #fff;
+      line-height: 1.2;
+      margin-top: 32px;
+      display: block;
+      max-width: 760px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .links {
+      margin-top: 38px;
+
+      a {
+        color: $color-simpleblue;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        i {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+
+      @media screen and (min-width: $min-width) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .image-box {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+
+  .see-more {
+    margin-top: 120px;
+
+    @media screen and (min-width: $min-width) {
+      margin-top: 135px;
+    }
+  }
+
+  footer {
+    #contactMe {
+      display: none;
+    }
+
+    .footer-content {
+      padding: 70px 40px;
+    }
+  }
+}
