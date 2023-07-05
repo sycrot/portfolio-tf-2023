@@ -1,10 +1,9 @@
+"use client"
 import Nav from "@/components/navbar"
 
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.scss'
-import Script from "next/script"
-import Footer from "./footer"
-import { NextSeo } from "next-seo"
+import React from "react"
 
 export const metadata = {
   title: 'Portfolio TF',
@@ -16,6 +15,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  React.useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle")
+  }, [])
+  
   return (
     <html lang="pt">
       <body>
