@@ -65,9 +65,14 @@ const skills = [
 
 function Levels(numLevels: number) {
   const levels = [];
+  const lastLevels = []
 
   for (let i = 1; i <= numLevels; i++) {
     levels.push(i);
+  }
+
+  for (let i = numLevels + 1; i <= 5; i++) {
+    lastLevels.push(i)
   }
 
   const handleTag = () => {
@@ -84,6 +89,11 @@ function Levels(numLevels: number) {
       {levels.map(level => (
         <div key={level} className={`box-level box-level-${level}`} aria-label={handleTag()}></div>
       ))}
+      {
+        lastLevels.map(level => (
+          <div key={level} className={`box-level`} aria-label={handleTag()}></div>
+        ))
+      }
     </div>
   )
 }
@@ -106,14 +116,6 @@ export default function SkillItem() {
 
               <div className="levels">
                 {Levels(value.level)}
-
-                <div className="mask-levels">
-                  <div className={`box-level`}></div>
-                  <div className={`box-level`}></div>
-                  <div className={`box-level`}></div>
-                  <div className={`box-level`}></div>
-                  <div className={`box-level`}></div>
-                </div>
               </div>
 
             </div>
