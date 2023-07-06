@@ -25,7 +25,7 @@ export default function Aboutme() {
 
           <div className="content">
             <div className="row">
-              {TimelineContent("2017", "Trabalhei como design gráfico, editor de vídeo, motion design e social media utilizando as habilidades que havia adquirido ao longo da vida, e iniciei meus estudos com desenvolvimento e programação.")}
+              {TimelineContent("2017", "Trabalhei como designer gráfico, editor de vídeo, motion design e social media utilizando as habilidades que havia adquirido ao longo da vida, e iniciei meus estudos com desenvolvimento e programação.")}
               {TimelineContent("2020", "Graduação em ADS (Análise e Desenvolvimento de Sistemas) com foco em desenvolvimento web e por cerca de dois anos trabalhei como freelancer com design gráfico, edição de vídeos e desenvolvimento frontend.")}
               {TimelineContent("2022", "Após estudar bastante tecnologia e desenvolvimento, consegui meu primeiro emprego em julho como desenvolvedor fullstack e logo depois, em setembro migrei para outra empresa atuando como desenvolvedor frontend.")}
               {TimelineContent("2023", "Atualmente trabalho como freelancer em tempo integral com desenvolvimento frontend, design gráfico e afins")}
