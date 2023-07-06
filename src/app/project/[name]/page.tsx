@@ -53,7 +53,7 @@ export default function Project() {
 
       {post.map((value, index) => (
         <div className="" key={index}>
-          <title>{`Portfolio TF | ${value.title}`}</title>
+          <title>{`TF | ${value.title}`}</title>
           <div className="header-project">
             <div className="container">
               <div className="title-portfolio-project">

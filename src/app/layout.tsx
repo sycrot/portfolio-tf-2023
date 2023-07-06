@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body>
-        <title>Portfolio TF</title>
+        <title>Thiago Farias</title>
         <Nav />
         {children}
       </body>
