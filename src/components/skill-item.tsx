@@ -9,6 +9,7 @@ import Sass from '../../public/assets/images/sass.png'
 import Bootstrap from '../../public/assets/images/bootstrap.png'
 import Node from '../../public/assets/images/node.png'
 import UxUi from '../../public/assets/images/ux-ui.png'
+import Redux from '../../public/assets/images/redux-logo.png'
 
 const skills = [
   {
@@ -53,7 +54,7 @@ const skills = [
   },
   {
     name: 'Node',
-    level: 3,
+    level: 2,
     image: Node
   },
   {
@@ -61,6 +62,11 @@ const skills = [
     level: 2,
     image: UxUi
   },
+  {
+    name: 'Redux',
+    level: 1,
+    image: Redux
+  }
 ]
 
 function Levels(numLevels: number) {
@@ -77,10 +83,13 @@ function Levels(numLevels: number) {
 
   const handleTag = () => {
     let numLevels = levels.length
-    return `${numLevels === 2 ? 'Júnior': ''}
+    return `
+    ${numLevels === 1 ? 'Iniciante': ''}
+    ${numLevels === 2 ? 'Júnior': ''}
     ${numLevels === 3 ? 'Intermediário': ''}
     ${numLevels === 4 ? 'Intermediário / avançado': ''}
-    ${numLevels === 5 ? 'Avançado': ''}`
+    ${numLevels === 5 ? 'Avançado': ''}
+    `
   }
 
   return (

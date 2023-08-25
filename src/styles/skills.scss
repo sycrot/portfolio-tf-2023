@@ -12,6 +12,11 @@
 
   .skill-item {
     margin-top: 30px;
+
+    img {
+      max-width: 95px;
+      max-height: 68px;
+    }
   }
 
   .levels {
@@ -25,6 +30,39 @@
 
       
       @media screen and (min-width: $min-width) {
+        &.tag-1 {
+          &:hover {
+            .box-level-1 {
+              position: relative;
+
+              &::after {
+                content: '' attr(aria-label)'';
+                max-width: 130px;
+                color: $color-darkblue;
+                display: block;
+                background: $color-superlight-blue-2;
+                border-radius: 6px;
+                padding: 5px 16px;
+                position: absolute;
+                top: -50px;
+                left: 0;
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                left: 30%;
+                transform: rotate(45deg);
+                position: absolute;
+                background: $color-superlight-blue-2;
+              }
+            }
+          }
+        }
+
         &.tag-2 {
           &:hover {
             .box-level-2 {
