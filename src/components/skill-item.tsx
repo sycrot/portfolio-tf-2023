@@ -9,7 +9,8 @@ import Sass from '../../public/assets/images/sass.png'
 import Bootstrap from '../../public/assets/images/bootstrap.png'
 import Node from '../../public/assets/images/node.png'
 import UxUi from '../../public/assets/images/ux-ui.png'
-import Redux from '../../public/assets/images/redux-logo.png'
+import Redux from '../../public/assets/images/redux-logo.png' 
+import Tailwind from '../../public/assets/images/tailwindcss.png'
 
 const skills = [
   {
@@ -66,6 +67,11 @@ const skills = [
     name: 'Redux',
     level: 1,
     image: Redux
+  },
+  {
+    name: 'Tailwind',
+    level: 4,
+    image: Tailwind
   }
 ]
 
