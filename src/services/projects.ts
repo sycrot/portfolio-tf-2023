@@ -34,7 +34,52 @@ import TipCalculator from '../../public/assets/images/projects/tip_calculator.jp
 import TipCalculator1 from '../../public/assets/images/projects/tip-calculator/1.png'
 import TipCalculatorMobile from '../../public/assets/images/projects/tip-calculator/1_mobile.png'
 
+import MonkeyChat from '../../public/assets/images/projects/monkey-chat.jpg'
+import MonkeyChat1 from '../../public/assets/images/projects/monkey-chat/1.png'
+import MonkeyChat2 from '../../public/assets/images/projects/monkey-chat/2.png'
+import MonkeyChat3 from '../../public/assets/images/projects/monkey-chat/3.png'
+import MonkeyChat1Mobile from '../../public/assets/images/projects/monkey-chat/1_mobile.png'
+import MonkeyChat12Mobile from '../../public/assets/images/projects/monkey-chat/1_2_mobile.png'
+import MonkeyChat2Mobile from '../../public/assets/images/projects/monkey-chat/2_mobile.png'
+import MonkeyChat3Mobile from '../../public/assets/images/projects/monkey-chat/3_mobile.png'
+
 export const posts = [
+  {
+    id: 6,
+    title: 'Monkey Chat',
+    image: MonkeyChat,
+    text: 'Next project',
+    link: 'monkey-chat',
+    description: `Aplicação web de chat, utilizando next, firebase e redux.
+    Nesse chat você pode enviar mensagens de texto e imagem em realtime, ver se usuários estão online, apagar a própria mensagem, criar e alterar seu usuário`,
+    imagesMobile: [
+      {
+        imageProject: MonkeyChat1Mobile
+      },
+      {
+        imageProject: MonkeyChat12Mobile
+      },
+      {
+        imageProject: MonkeyChat2Mobile
+      },
+      {
+        imageProject: MonkeyChat3Mobile
+      },
+    ],
+    imagesDesktop: [
+      {
+        imageProject: MonkeyChat1
+      },
+      {
+        imageProject: MonkeyChat2
+      },
+      {
+        imageProject: MonkeyChat3
+      },
+    ],
+    repository: 'https://github.com/sycrot/monkey-chat',
+    sitePreview: ''
+  },
   {
     id: 1,
     title: 'Multi Step Form',
