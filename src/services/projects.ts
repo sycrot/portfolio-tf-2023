@@ -78,7 +78,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/monkey-chat',
-    sitePreview: ''
+    sitePreview: '',
+    bgColor: '#061E21'
   },
   {
     id: 1,
@@ -116,7 +117,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/multi-step-form',
-    sitePreview: 'https://multi-step-form-five-rose.vercel.app/'
+    sitePreview: 'https://multi-step-form-five-rose.vercel.app/',
+    bgColor: '#EEF8FF'
   },
   {
     id: 2,
@@ -145,7 +147,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/ecommerce-carrefour-tech-day-dio',
-    sitePreview: 'https://ecommerce-carrefour-tech-day-dio.vercel.app/'
+    sitePreview: 'https://ecommerce-carrefour-tech-day-dio.vercel.app/',
+    bgColor: '#fff'
   },
   {
     id: 3,
@@ -171,7 +174,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/calculator-app-main',
-    sitePreview: 'https://sycrot.github.io/calculator-app-main/'
+    sitePreview: 'https://sycrot.github.io/calculator-app-main/',
+    bgColor: '#314565'
   },
   {
     id: 4,
@@ -197,7 +201,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/github-user-search',
-    sitePreview: 'https://sycrot.github.io/github-user-search/'
+    sitePreview: 'https://sycrot.github.io/github-user-search/',
+    bgColor: '#07162C'
   },
   {
     id: 5,
@@ -217,7 +222,8 @@ export const posts = [
       },
     ],
     repository: 'https://github.com/sycrot/tip_calculator_app',
-    sitePreview: 'https://sycrot.github.io/tip_calculator_app/'
+    sitePreview: 'https://sycrot.github.io/tip_calculator_app/',
+    bgColor: '#B9E6E9'
   },
 ]
 
