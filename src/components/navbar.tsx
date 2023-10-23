@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
-import Logo from '../../public/assets/images/logo.png'
-import MenuIcon from '../../public/assets/images/menu-icon.png'
+import Logo from '@/assets/images/logo.png'
+import MenuIcon from '@/assets/images/menu-icon.png'
 
 export default function Nav() {
   return (

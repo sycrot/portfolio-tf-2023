@@ -1,49 +1,91 @@
-import MultiStepImage from "../../public/assets/images/projects/multi-step-form.jpg"
-import EccomerceTechDay from "../../public/assets/images/projects/eccomerce-tech-day.jpg"
-import CalculatorMultiThemes from "../../public/assets/images/projects/calculator-multi-theme.jpg"
-import GitHubUserSearch from "../../public/assets/images/projects/github-user-search.jpg"
+import MultiStepImage from "@/assets/images/projects/multi-step-form.jpg"
+import EccomerceTechDay from "@/assets/images/projects/eccomerce-tech-day.jpg"
+import CalculatorMultiThemes from "@/assets/images/projects/calculator-multi-theme.jpg"
+import GitHubUserSearch from "@/assets/images/projects/github-user-search.jpg"
 
-import MultiStep1 from '../../public/assets/images/projects/multi-step/1.png'
-import MultiStep2 from '../../public/assets/images/projects/multi-step/2.png'
-import MultiStep3 from '../../public/assets/images/projects/multi-step/3.png'
-import MultiStep4 from '../../public/assets/images/projects/multi-step/4.png'
+import MultiStep1 from '@/assets/images/projects/multi-step/1.png'
+import MultiStep2 from '@/assets/images/projects/multi-step/2.png'
+import MultiStep3 from '@/assets/images/projects/multi-step/3.png'
+import MultiStep4 from '@/assets/images/projects/multi-step/4.png'
 
-import MultiStepMobile1 from '../../public/assets/images/projects/multi-step/1_mobile.png'
-import MultiStepMobile2 from '../../public/assets/images/projects/multi-step/2_mobile.png'
-import MultiStepMobile3 from '../../public/assets/images/projects/multi-step/3_mobile.png'
-import MultiStepMobile4 from '../../public/assets/images/projects/multi-step/4_mobile.png'
+import MultiStepMobile1 from '@/assets/images/projects/multi-step/1_mobile.png'
+import MultiStepMobile2 from '@/assets/images/projects/multi-step/2_mobile.png'
+import MultiStepMobile3 from '@/assets/images/projects/multi-step/3_mobile.png'
+import MultiStepMobile4 from '@/assets/images/projects/multi-step/4_mobile.png'
 
-import TechDayCarrefour1 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/1.png'
-import TechDayCarrefour2 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/2.png'
-import TechDayCarrefour3 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/3.png'
-import TechDayCarrefourMobile1 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/1_mobile.png'
-import TechDayCarrefourMobile2 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/2_mobile.png'
-import TechDayCarrefourMobile3 from '../../public/assets/images/projects/eccomerce-carrefour-tech-day/3_mobile.png'
+import TechDayCarrefour1 from '@/assets/images/projects/eccomerce-carrefour-tech-day/1.png'
+import TechDayCarrefour2 from '@/assets/images/projects/eccomerce-carrefour-tech-day/2.png'
+import TechDayCarrefour3 from '@/assets/images/projects/eccomerce-carrefour-tech-day/3.png'
+import TechDayCarrefourMobile1 from '@/assets/images/projects/eccomerce-carrefour-tech-day/1_mobile.png'
+import TechDayCarrefourMobile2 from '@/assets/images/projects/eccomerce-carrefour-tech-day/2_mobile.png'
+import TechDayCarrefourMobile3 from '@/assets/images/projects/eccomerce-carrefour-tech-day/3_mobile.png'
 
-import CalculatorMultiThemes1 from '../../public/assets/images/projects/calculator-multi-themes/1.png'
-import CalculatorMultiThemes2 from '../../public/assets/images/projects/calculator-multi-themes/2.png'
-import CalculatorMultiThemesMobile1 from '../../public/assets/images/projects/calculator-multi-themes/1_mobile.png'
-import CalculatorMultiThemesMobile2 from '../../public/assets/images/projects/calculator-multi-themes/2_mobile.png'
+import CalculatorMultiThemes1 from '@/assets/images/projects/calculator-multi-themes/1.png'
+import CalculatorMultiThemes2 from '@/assets/images/projects/calculator-multi-themes/2.png'
+import CalculatorMultiThemesMobile1 from '@/assets/images/projects/calculator-multi-themes/1_mobile.png'
+import CalculatorMultiThemesMobile2 from '@/assets/images/projects/calculator-multi-themes/2_mobile.png'
 
-import GitHubUser1 from '../../public/assets/images/projects/git-user-search/1.png'
-import GitHubUser2 from '../../public/assets/images/projects/git-user-search/2.png'
-import GitHubUserMobile2 from '../../public/assets/images/projects/git-user-search/2_mobile.png'
-import GitHubUserMobile1 from '../../public/assets/images/projects/git-user-search/1_mobile.png'
+import GitHubUser1 from '@/assets/images/projects/git-user-search/1.png'
+import GitHubUser2 from '@/assets/images/projects/git-user-search/2.png'
+import GitHubUserMobile2 from '@/assets/images/projects/git-user-search/2_mobile.png'
+import GitHubUserMobile1 from '@/assets/images/projects/git-user-search/1_mobile.png'
 
-import TipCalculator from '../../public/assets/images/projects/tip_calculator.jpg'
-import TipCalculator1 from '../../public/assets/images/projects/tip-calculator/1.png'
-import TipCalculatorMobile from '../../public/assets/images/projects/tip-calculator/1_mobile.png'
+import TipCalculator from '@/assets/images/projects/tip_calculator.jpg'
+import TipCalculator1 from '@/assets/images/projects/tip-calculator/1.png'
+import TipCalculatorMobile from '@/assets/images/projects/tip-calculator/1_mobile.png'
 
-import MonkeyChat from '../../public/assets/images/projects/monkey-chat.jpg'
-import MonkeyChat1 from '../../public/assets/images/projects/monkey-chat/1.png'
-import MonkeyChat2 from '../../public/assets/images/projects/monkey-chat/2.png'
-import MonkeyChat3 from '../../public/assets/images/projects/monkey-chat/3.png'
-import MonkeyChat1Mobile from '../../public/assets/images/projects/monkey-chat/1_mobile.png'
-import MonkeyChat12Mobile from '../../public/assets/images/projects/monkey-chat/1_2_mobile.png'
-import MonkeyChat2Mobile from '../../public/assets/images/projects/monkey-chat/2_mobile.png'
-import MonkeyChat3Mobile from '../../public/assets/images/projects/monkey-chat/3_mobile.png'
+import MonkeyChat from '@/assets/images/projects/monkey-chat.jpg'
+import MonkeyChat1 from '@/assets/images/projects/monkey-chat/1.png'
+import MonkeyChat2 from '@/assets/images/projects/monkey-chat/2.png'
+import MonkeyChat3 from '@/assets/images/projects/monkey-chat/3.png'
+import MonkeyChat1Mobile from '@/assets/images/projects/monkey-chat/1_mobile.png'
+import MonkeyChat12Mobile from '@/assets/images/projects/monkey-chat/1_2_mobile.png'
+import MonkeyChat2Mobile from '@/assets/images/projects/monkey-chat/2_mobile.png'
+import MonkeyChat3Mobile from '@/assets/images/projects/monkey-chat/3_mobile.png'
+
+import MusicalThing from '@/assets/images/projects/musical-thing.jpg'
+import MusicalThing1 from '@/assets/images/projects/musical-thing/capture1.png'
+import MusicalThing2 from '@/assets/images/projects/musical-thing/capture2.png'
+import MusicalThing3 from '@/assets/images/projects/musical-thing/capture3.png'
+import MusicalThing4 from '@/assets/images/projects/musical-thing/capture4.png'
+import MusicalThing5 from '@/assets/images/projects/musical-thing/capture5.png'
+import MusicalThing6 from '@/assets/images/projects/musical-thing/capture6.png'
 
 export const posts = [
+  {
+    id: 7,
+    title: 'Musical Thing',
+    image: MusicalThing,
+    text: 'Next project',
+    link: 'musical-thing',
+    description: `Aplicação web voltada para streaming de musicas. Os dados das playlists, albuns, musicas, uruarios e artistas sao consultados atraves da Web API | Spotify For Developers.`,
+    imagesMobile: [
+      
+    ],
+    imagesDesktop: [
+      {
+        imageProject: MusicalThing1
+      },
+      {
+        imageProject: MusicalThing2
+      },
+      {
+        imageProject: MusicalThing3
+      },
+      {
+        imageProject: MusicalThing4
+      },
+      {
+        imageProject: MusicalThing5
+      },
+      {
+        imageProject: MusicalThing6
+      },
+    ],
+    repository: 'https://github.com/sycrot/musical-thing',
+    sitePreview: '',
+    bgColor: '#ffffff'
+  },
   {
     id: 6,
     title: 'Monkey Chat',
@@ -227,6 +269,7 @@ export const posts = [
   },
 ]
 
-export function getRandomPosts() {
-  return posts.sort(() => 0.5 - Math.random()).slice(0, 4)
+export function getRandomPosts(id: number) {
+  const postsEquals: any = posts.filter(value => value.id !== id)
+  return postsEquals?.sort(() => 0.5 - Math.random()).slice(0, 4)
 }

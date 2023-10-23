@@ -18,22 +18,20 @@ export default function ProjectItem(props: Props) {
   }
 
   return (
-    <div className="cursor-pointer col-12 col-md-3 text-decoration-none" onClick={handleProjectView}>
-      <div className="portfolio-item">
-        <div className="image-portfolio">
-          <div className="content">
-            <Image src={props.image} alt={props.title}/>
-          </div>
+    <div className="portfolio-item" onClick={handleProjectView}>
+      <div className="image-portfolio">
+        <div className="content">
+          <Image src={props.image} alt={props.title} />
         </div>
+      </div>
 
-        <div className="content-texts d-flex justify-content-between">
-          <div className="texts">
-            <p className="title-project mb-0 color-simpleblue fw-medium">{props.title}</p>
-            <span className="mb-0 fw-light color-gray">{props.text}</span>
-          </div>
-          <Link href={`/project/${props.link}`} className="button-more-blue mt-2"></Link>
-
+      <div className="content-texts d-flex justify-content-between">
+        <div className="texts">
+          <p className="title-project mb-0 color-simpleblue fw-medium">{props.title}</p>
+          <span className="mb-0 fw-light color-gray">{props.text}</span>
         </div>
+        <Link href={`/project/${props.link}`} className="button-more-blue mt-2"></Link>
+
       </div>
     </div>
   )

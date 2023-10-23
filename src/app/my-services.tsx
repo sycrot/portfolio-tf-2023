@@ -1,6 +1,6 @@
 import Image from "next/image";
-import MyServices1 from '../../public/assets/images/pc-desenvolvimento-programacao.png'
-import MyServices2 from '../../public/assets/images/pc-design.png'
+import MyServices1 from '@/assets/images/pc-desenvolvimento-programacao.png'
+import MyServices2 from '@/assets/images/pc-design.png'
 
 export default function MyServices() {
   return (

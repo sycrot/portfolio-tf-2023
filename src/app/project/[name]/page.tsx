@@ -37,7 +37,6 @@ export default function Project() {
     sitePreview: '',
     bgColor: ''
   }])
-  const [randomPosts, setRandomPosts] = React.useState(getRandomPosts)
   const [bgColor, setBgColor] = React.useState('')
   const router = useParams()
 
@@ -89,7 +88,7 @@ export default function Project() {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 pe-md-5 position-relative">
+              <div className={`col-12 ${value.imagesMobile.length > 0 && 'col-md-6'} pe-md-5 position-relative`}>
                 <div className="title-section mb-md-5"><h2>Desktop</h2></div>
                 <div className="row position-relative">
                   <Carousel>
@@ -115,33 +114,36 @@ export default function Project() {
                   </Carousel>
                 </div>
               </div>
-              <div className="col-12 col-md-6 mt-5 mt-md-0 ps-md-5">
-                <div className="title-section mb-md-5"><h2>Mobile</h2></div>
-                <div className="row position-relative">
-                  <Carousel>
-                    {value.imagesMobile.map((value, index) => (
-                      <Carousel.Item key={index}>
-                        <TransformWrapper
-                          initialScale={1}
-                        >
-                          {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
-                            <React.Fragment>
-                              <div className="py-3 px-3 h-100" onMouseDown={handleCursor} onMouseUp={handleCursor} onMouseOut={() => resetTransform()}>
-                                <div className="image-box mobile" style={{ background: bgColor }}>
-                                  <TransformComponent>
-                                    <Image src={value.imageProject} alt={index.toString()} />
-                                  </TransformComponent>
+              {value.imagesMobile.length > 0 &&
+                <div className="col-12 col-md-6 mt-5 mt-md-0 ps-md-5">
+                  <div className="title-section mb-md-5"><h2>Mobile</h2></div>
+                  <div className="row position-relative">
+                    <Carousel>
+                      {value.imagesMobile.map((value, index) => (
+                        <Carousel.Item key={index}>
+                          <TransformWrapper
+                            initialScale={1}
+                          >
+                            {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+                              <React.Fragment>
+                                <div className="py-3 px-3 h-100" onMouseDown={handleCursor} onMouseUp={handleCursor} onMouseOut={() => resetTransform()}>
+                                  <div className="image-box mobile" style={{ background: bgColor }}>
+                                    <TransformComponent>
+                                      <Image src={value.imageProject} alt={index.toString()} />
+                                    </TransformComponent>
+                                  </div>
                                 </div>
-                              </div>
-                            </React.Fragment>
+                              </React.Fragment>
 
-                          )}
-                        </TransformWrapper>
-                      </Carousel.Item>
-                    ))}
-                  </Carousel>
+                            )}
+                          </TransformWrapper>
+                        </Carousel.Item>
+                      ))}
+                    </Carousel>
+                  </div>
                 </div>
-              </div>
+              }
+
             </div>
           </div>
         </div>
@@ -151,8 +153,10 @@ export default function Project() {
         <div className="container">
           <div className="title-section mb-3 mb-md-5"><h2>Veja mais</h2></div>
           <div className="row">
-            {randomPosts.map((value, index) => (
-              <ProjectItem key={index} image={value.image} title={value.title} text={value.text} link={value.link}/>
+            {getRandomPosts(post[0].id).map((value: any, index: any) => (
+              <div className="col-12 col-md-3" key={index}>
+                <ProjectItem  image={value.image} title={value.title} text={value.text} link={value.link} />
+              </div>
             ))}
           </div>
         </div>

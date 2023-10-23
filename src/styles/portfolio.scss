@@ -5,4 +5,73 @@
   .title-section {
     margin-bottom: 60px;
   }
+
+  .slick-slider {
+    .slick-list {
+      margin: 0 -5px;
+    }
+
+    .slick-slide>div {
+      padding: 0 5px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 35px;
+      height: 35px;
+      color: red;
+      border-radius: 50%;
+      background-position: center;
+      background-color: rgba(57, 72, 103, 0.192);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      opacity: .5;
+      z-index: 10;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .slick-prev {
+      background-image: url('/assets/images/arrow-left.png');
+    }
+
+    .slick-next {
+      background-image: url('/assets/images/arrow-right.png');
+    }
+
+    .slick-dots li {
+      margin: 0 5px;
+
+      &.slick-active {
+        button {
+          background: #394867;
+          color: #fff
+        }
+      }
+
+      button {
+        font-size: 14px;
+        line-height: inherit;
+        color: #394867;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border-radius: 50%;
+        border: 1px solid #394867;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
 }
