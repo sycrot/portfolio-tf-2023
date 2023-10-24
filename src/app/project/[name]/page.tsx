@@ -35,6 +35,7 @@ export default function Project() {
     ],
     repository: '',
     sitePreview: '',
+    design: '',
     bgColor: ''
   }])
   const [bgColor, setBgColor] = React.useState('')
@@ -79,10 +80,18 @@ export default function Project() {
                 <div className="col-12 col-md-2">
                   <Link href={value.repository} className="mb-4 mb-md-0" target="_blank"><i className="i-github-blue2"></i>Repositório</Link>
                 </div>
-                <div className="col-12 col-md-3">
-                  {value.sitePreview !== '' && <Link href={value.sitePreview} className="preview" target="_blank"><i className="i-preview-blue"></i>Visualização (Preview site)</Link>}
-
-                </div>
+                {value.sitePreview &&
+                  <div className="col-12 col-md-3">
+                    <Link href={value.sitePreview ?? ''} className="preview" target="_blank"><i className="i-preview-blue"></i>Visualização (Preview site)</Link>
+                  </div>
+                }
+                {value.design &&
+                  <div className="col-12 col-md-3">
+                    <Link href={value.design ?? ''} className="preview" target="_blank"><i className="i-layout-design">
+                    </i>Design (UX/UI)
+                    </Link>
+                  </div>
+                }
               </div>
             </div>
           </div>
@@ -155,7 +164,7 @@ export default function Project() {
           <div className="row">
             {getRandomPosts(post[0].id).map((value: any, index: any) => (
               <div className="col-12 col-md-3" key={index}>
-                <ProjectItem  image={value.image} title={value.title} text={value.text} link={value.link} />
+                <ProjectItem image={value.image} title={value.title} text={value.text} link={value.link} />
               </div>
             ))}
           </div>

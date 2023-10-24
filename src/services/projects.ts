@@ -84,6 +84,7 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/musical-thing',
     sitePreview: '',
+    design: 'https://www.figma.com/file/2cmRMP5Diw9Io8CYQKfR4y/Musical-Thing?type=design&node-id=0%3A1&mode=design&t=Jr4nDhJ9blkDLgkQ-1',
     bgColor: '#ffffff'
   },
   {
@@ -121,6 +122,7 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/monkey-chat',
     sitePreview: '',
+    design: 'https://www.figma.com/file/vVjs4Od2M51a1D90O9EcsT/monkey-chat?type=design&mode=design&t=VtFpbqQ3LO30ALbg-1',
     bgColor: '#061E21'
   },
   {
