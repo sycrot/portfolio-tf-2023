@@ -333,3 +333,16 @@ p {
     }
   }
 }
+
+.button-submit {
+  border: none;
+  background: $color-simpleblue;
+  border-radius: 6px;
+  padding: 8px 35px;
+  font-weight: bold;
+  color: #fff;
+
+  &:hover {
+    filter: brightness(.92)
+  }
+}

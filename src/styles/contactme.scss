@@ -1,0 +1,31 @@
+#contactMe {
+  background: $color-superlight-blue;
+  padding: 130px 0 115px;
+
+  form {
+    input, textarea {
+      border: none;
+      outline: none;
+
+      &.input-error {
+        border: 1px solid red;
+      }
+    }
+  }
+
+  .boxtexts {
+    h2 {
+      font-size: 32px;
+      color: $color-blue;
+      font-weight: bold;
+    }
+    h5 {
+      font-size: 24px;
+      color: $color-blue;
+      font-weight: normal;
+    }
+    p, a {
+      color: $color-simpleblue;
+    }
+  }
+}

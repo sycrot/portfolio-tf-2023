@@ -9,7 +9,6 @@ footer {
     }
   }
   #contactMe {
-    margin-bottom: -123px;
     .box-bluelight {
       max-width: 340px;
       margin-left: auto;
@@ -65,7 +64,7 @@ footer {
 
   .footer-content {
     background: $color-darkblue;
-    padding: 200px 40px 70px;
+    padding: 70px 40px;
     text-align: center;
 
     @media screen and (min-width: $min-width) {

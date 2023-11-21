@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Logo from '@/assets/images/logo-fluid.png'
 import Link from "next/link";
+import Contactme from "@/components/contatcme";
 
 export default function Footer() {
   return (
     <footer>
-      <div id="contactMe">
+      {/* <div id="contactMe">
         <div className="box-bluelight d-flex flex-column justify-content-center align-items-center">
           <div className="title-section-2">
             <h2>Contate-me</h2>
@@ -15,14 +16,14 @@ export default function Footer() {
             <a href="https://api.whatsapp.com/send?phone=5599981320253" target="_blank"><p className="d-flex align-items-center mb-0 mt-2"><i className="i-phone"></i>+55 99 98132-0253</p></a>
           </div>
         </div>
-      </div>
-
+      </div> */}
+      <Contactme />
       <div className="footer-content">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-4 d-flex justify-content-start align-items-center">
               <Link href="/" className="ms-auto me-auto ms-md-0 me-md-0 d-block">
-                <Image src={Logo} alt="Logo TF"/>
+                <Image src={Logo} alt="Logo TF" />
               </Link>
             </div>
             <div className="col-12 col-md-4 d-flex justify-content-center">
