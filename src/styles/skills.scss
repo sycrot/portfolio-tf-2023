@@ -10,6 +10,65 @@
     }
   }
 
+  .nav-tabs {
+    border-bottom: 2px solid $color-simpleblue-4;
+    .nav-item {
+      button {
+        background: none;
+        border: none;
+        padding: 20px 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: $color-simpleblue-4;
+        margin-bottom: -2px;
+        &.active {
+          background: none;
+          color: $color-marineblue;
+          border: none;
+          border-bottom: 2px solid $color-marineblue;
+        }
+      }
+    }
+  }
+
+  .accordion {
+    .accordion-item {
+      background: none;
+      border: none;
+    }
+    border: none;
+    background: none;
+
+    --bs-accordion-border-width: 0;    
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
+
+    .accordion-header {
+      background: none;
+      border: none;
+      border-bottom: 2px solid $color-simpleblue-4;
+      
+      button {
+        background: none;
+        border: none;
+        padding: 20px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: $color-simpleblue-4;
+        margin-bottom: -2px;
+
+        &[aria-expanded='true'] {
+          color: $color-marineblue;
+          border-bottom: 2px solid $color-simpleblue-4;
+          outline: none;
+        }
+      }
+    }
+
+    .accordion-body {
+      padding-top: 0;
+    }
+  }
+
   .skill-item {
     margin-top: 30px;
 
@@ -28,8 +87,22 @@
       position: relative;
       z-index: 10;
 
-      
+
       @media screen and (min-width: $min-width) {
+        &:hover {
+          .box-level {
+            &::after {
+              color: $color-superlight-blue;
+              background: $color-blue-24;
+              animation: bubleAnimation .3s ease-in;
+            }
+            &::before {
+              background: $color-blue-24;
+              animation: opacityAnimation .4s ease-in;
+            }
+          }
+        }
+
         &.tag-1 {
           &:hover {
             .box-level-1 {
@@ -38,9 +111,7 @@
               &::after {
                 content: '' attr(aria-label)'';
                 max-width: 130px;
-                color: $color-darkblue;
                 display: block;
-                background: $color-superlight-blue-2;
                 border-radius: 6px;
                 padding: 5px 16px;
                 position: absolute;
@@ -57,7 +128,6 @@
                 left: 30%;
                 transform: rotate(45deg);
                 position: absolute;
-                background: $color-superlight-blue-2;
               }
             }
           }
@@ -71,9 +141,7 @@
               &::after {
                 content: '' attr(aria-label)'';
                 max-width: 130px;
-                color: $color-darkblue;
                 display: block;
-                background: $color-superlight-blue-2;
                 border-radius: 6px;
                 padding: 5px 16px;
                 position: absolute;
@@ -90,7 +158,6 @@
                 left: 30%;
                 transform: rotate(45deg);
                 position: absolute;
-                background: $color-superlight-blue-2;
               }
             }
           }
@@ -104,9 +171,7 @@
               &::after {
                 content: '' attr(aria-label)'';
                 max-width: 130px;
-                color: $color-darkblue;
                 display: block;
-                background: $color-superlight-blue-2;
                 border-radius: 6px;
                 padding: 5px 16px;
                 position: absolute;
@@ -123,7 +188,6 @@
                 left: 30%;
                 transform: rotate(45deg);
                 position: absolute;
-                background: $color-superlight-blue-2;
               }
             }
           }
@@ -137,9 +201,7 @@
               &::after {
                 content: '' attr(aria-label)'';
                 max-width: 130px;
-                color: $color-darkblue;
                 display: block;
-                background: $color-superlight-blue-2;
                 border-radius: 6px;
                 padding: 5px 16px;
                 position: absolute;
@@ -156,7 +218,6 @@
                 left: 30%;
                 transform: rotate(45deg);
                 position: absolute;
-                background: $color-superlight-blue-2;
               }
             }
           }
@@ -170,9 +231,7 @@
               &::after {
                 content: '' attr(aria-label)'';
                 max-width: 130px;
-                color: $color-darkblue;
                 display: block;
-                background: $color-superlight-blue-2;
                 border-radius: 6px;
                 padding: 5px 16px;
                 position: absolute;
@@ -189,7 +248,6 @@
                 left: 30%;
                 transform: rotate(45deg);
                 position: absolute;
-                background: $color-superlight-blue-2;
               }
             }
           }
@@ -201,7 +259,7 @@
       width: 45px;
       height: 20px;
       border-radius: 4px;
-      background: $color-gray-9d;
+      background: $color-blue-24;
     }
 
     .box-level-1 {

@@ -1,11 +1,18 @@
 #contactMe {
-  background: $color-superlight-blue;
+  background: $color-darkblue;
   padding: 130px 0 115px;
 
   form {
+    .form-floating > label {
+      color: $color-superlightgray-2;
+      &::after {
+        background: $color-darkblue-4;
+      }
+    }
     input, textarea {
       border: none;
       outline: none;
+      background: $color-darkblue-4;
 
       &.input-error {
         border: 1px solid red;
@@ -16,16 +23,16 @@
   .boxtexts {
     h2 {
       font-size: 32px;
-      color: $color-blue;
+      color: $color-marineblue;
       font-weight: bold;
     }
     h5 {
       font-size: 24px;
-      color: $color-blue;
+      color: $color-marineblue;
       font-weight: normal;
     }
     p, a {
-      color: $color-simpleblue;
+      color: $color-superlight-blue;
     }
   }
 }

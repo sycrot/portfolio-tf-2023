@@ -6,17 +6,6 @@ import Contactme from "@/components/contatcme";
 export default function Footer() {
   return (
     <footer>
-      {/* <div id="contactMe">
-        <div className="box-bluelight d-flex flex-column justify-content-center align-items-center">
-          <div className="title-section-2">
-            <h2>Contate-me</h2>
-          </div>
-          <div className="content">
-            <a href="mailto:thiagojosef99@gmail.com?subject=Olá%20, Thiago J Farias"><p className="d-flex align-items-center mb-0"><i className="i-email"></i>thiagojosef99@gmail.com</p></a>
-            <a href="https://api.whatsapp.com/send?phone=5599981320253" target="_blank"><p className="d-flex align-items-center mb-0 mt-2"><i className="i-phone"></i>+55 99 98132-0253</p></a>
-          </div>
-        </div>
-      </div> */}
       <Contactme />
       <div className="footer-content">
         <div className="container">

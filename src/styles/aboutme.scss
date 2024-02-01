@@ -13,7 +13,7 @@
   }
 
   p {
-    color: $color-darkblue;
+    color: $color-whiteblue;
   }
 
   .content {
@@ -48,8 +48,9 @@
       display: block;
       width: 22px;
       height: 100%;
-      background: $color-superlightgray;
+      background: $color-superdarkblue;
       margin-top: 5px;
+      right: inherit;
     }
 
     &:nth-child(4) {
@@ -72,6 +73,7 @@
         height: 6px;
         position: absolute;
         top: 5px;
+        right: -20px;
       }
     }
   }
@@ -90,7 +92,7 @@
       span {
         margin-left: 4px;
         font-size: 18px;
-        color: $color-simpleblue;
+        color: $color-whiteblue;
         font-weight: 500;
         font-family: 'Kanit', sans-serif;
       }
@@ -100,7 +102,7 @@
         display: block;
         width: 20px;
         height: 20px;
-        background: $color-simpleblue;
+        background: $color-dark-lightblue;
         border-radius: 50%;
       }
 
@@ -123,7 +125,7 @@
           position: relative;
           width: 20px;
           height: 20px;
-          background: $color-simpleblue;
+          background: $color-dark-lightblue;
           border-radius: 50%;
           z-index: 10;
         }

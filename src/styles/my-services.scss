@@ -8,33 +8,191 @@
     }
   }
 
-  .my-service-item-1 {
-    img {
-      margin-left: -110px;
+  .my-service-item {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* height: 380px; */
+    border-radius: 12px;
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s;
 
-      @media screen and (min-width: $min-width) {
-        width: 215px;
-        height: inherit;
-        margin-left: 0;
+    /* @media screen and (min-width: $min-width) {
+      height: 341px;
+    } */
+
+    p {
+      display: block;
+      margin-top: 12px;
+      margin-top: 48px;
+      margin-bottom: 0 !important;
+      transition: all .4s;
+      line-height: 110%;
+      opacity: 0;
+
+      @media screen and (max-width: $min-width) {
+        opacity: 1;
+      }
+    }
+
+    h6 {
+      transition: all 1s;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @media screen and (max-width: $min-width) {
+        bottom: inherit;
+        right: inherit;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: $color-whiteblue;
+      margin-top: 20px;
+      justify-content: end;
+      font-weight: bold;
+      transition: all .4s;
+      opacity: 0;
+
+      @media screen and (max-width: $min-width) {
+        opacity: 1;
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        transition: all .4s;
+      }
+
+      &:hover {
+        filter: brightness(.9);
+        img {
+          transform: scale(1.06);
+        }
+      }
+    }
+
+    &:hover {
+      justify-content: inherit;
+      align-items: inherit;
+
+      p {
+        display: block;
+        opacity: 1;
+        animation: textServiceItem 1s;
+      }
+
+      a {
+        display: flex;
+        opacity: 1;
+        animation: linkServiceItem 1s;
+      }
+
+      h6 {
+        animation: titleServiceItem .8s;
+        bottom: inherit;
+        right: inherit;
+      }
+
+      &::after {
+        transform: scale(1.04);
+      }
+    }
+
+    @keyframes textServiceItem {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes titleServiceItem {
+      from {
+        opacity: 0;
+        transform: translate(50%, 600%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    @keyframes linkServiceItem {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    &.my-service-item-1 {
+      background: linear-gradient(252deg, #111821 0.64%, #102136 99.23%);
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url('/assets/images/pc-desenvolvimento-programacao.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: -110px;
+        top: 22px;
+        width: 100%;
+        max-width: 365px;
+        height: 298px;
+        opacity: .2;
+        transition: all .4s;
+      }
+    }
+
+    &.my-service-item-2 {
+      background: linear-gradient(251deg, #18253D 0%, #0F1D37 100%);
+
+      h6 {
+        color: $color-marineblue-2;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url('/assets/images/pc-design.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: -110px;
+        top: 22px;
+        width: 100%;
+        max-width: 365px;
+        height: 298px;
+        opacity: .2;
+        transition: all .4s;
       }
     }
   }
 
   .my-service-item-2 {
-    margin-top: 70px;
+    margin-top: 20px;
 
     @media screen and (min-width: $min-width) {
       margin-top: 0;
-    }
-
-    img {
-      margin-left: -30px;
-
-      @media screen and (min-width: $min-width) {
-        width: 215px;
-        height: inherit;
-        margin-left: 0;
-      }
     }
   }
 }
