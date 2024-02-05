@@ -111,7 +111,7 @@ export default function Project() {
                 <div className="col-12">
                   <div className="px-md-3">
                     <div className="iframe-content">
-                      <iframe src={value.iframeCod} height="100%" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style={{ width: '100%', height: '100%' }}></iframe>
+                      <iframe src={value.iframeCod} height="100%" width="100%" allowFullScreen frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" style={{ width: '100%', height: '100%' }}></iframe>
                     </div>
                   </div>
                 </div>
