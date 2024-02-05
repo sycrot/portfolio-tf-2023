@@ -51,12 +51,19 @@ import MusicalThing4 from '@/assets/images/projects/musical-thing/capture4.png'
 import MusicalThing5 from '@/assets/images/projects/musical-thing/capture5.png'
 import MusicalThing6 from '@/assets/images/projects/musical-thing/capture6.png'
 
+import BannerSocialMediaSport from '@/assets/images/projects/d-rose-banner/10origbanner_d_r_origins.jpg'
+import BurgerMasterMotion from '@/assets/images/projects/burger-master-motion/0076be113616257.602bbbcfafc3e.jpg'
+import ModeloClothing from '@/assets/images/projects/model-clotthing/166752114059155.603431c36cfd1.jpg'
+import MoveisBanner from '@/assets/images/projects/moveis-banner/7ebe19143936987.6283ab83285b9.jpg'
+import ModelBanner from '@/assets/images/projects/model-banner/square1.jpg'
+import LavineBanner from '@/assets/images/projects/banner-lavine/e9b56a166143163.64131afeefeaa.jpg'
+
 export const posts = [
   {
     id: 7,
     title: 'Musical Thing',
-    image: MusicalThing,
-    text: 'Next project',
+    image: MusicalThing1,
+    text: 'Desenvolvimento • UX/UI',
     link: 'musical-thing',
     description: `Aplicação web voltada para streaming de musicas. Os dados das playlists, albuns, musicas, uruarios e artistas sao consultados atraves da Web API | Spotify For Developers.`,
     imagesMobile: [
@@ -85,13 +92,14 @@ export const posts = [
     repository: 'https://github.com/sycrot/musical-thing',
     sitePreview: '',
     design: 'https://www.figma.com/file/2cmRMP5Diw9Io8CYQKfR4y/Musical-Thing?type=design&node-id=0%3A1&mode=design&t=Jr4nDhJ9blkDLgkQ-1',
-    bgColor: '#ffffff'
+    bgColor: '#ffffff',
+    areas: ['devlopment', 'ux-ui']
   },
   {
     id: 6,
     title: 'Monkey Chat',
-    image: MonkeyChat,
-    text: 'Next project',
+    image: MonkeyChat1,
+    text: 'Desenvolvimento • UX/UI',
     link: 'monkey-chat',
     description: `Aplicação web de chat, utilizando next, firebase e redux.
     Nesse chat você pode enviar mensagens de texto e imagem em realtime, ver se usuários estão online, apagar a própria mensagem, criar e alterar seu usuário`,
@@ -123,13 +131,48 @@ export const posts = [
     repository: 'https://github.com/sycrot/monkey-chat',
     sitePreview: '',
     design: 'https://www.figma.com/file/vVjs4Od2M51a1D90O9EcsT/monkey-chat?type=design&mode=design&t=VtFpbqQ3LO30ALbg-1',
-    bgColor: '#061E21'
+    bgColor: '#061E21',
+    areas: ['devlopment', 'ux-ui']
+  },
+  {
+    id: 17,
+    title: 'Zach LaVine - Chicago Bulls by TF',
+    image: LavineBanner,
+    text: 'Desing gráfico',
+    link: 'zach-lavine-chicago-bulls-by-tf',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['design'],
+    iframeCod: 'https://www.behance.net/embed/project/166143163?ilo0=1'
+  },
+  {
+    id: 16,
+    title: 'Social media, clothes',
+    image: ModelBanner,
+    text: 'Desing gráfico',
+    link: 'social-media-clothes',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['design'],
+    iframeCod: 'https://www.behance.net/embed/project/163941905?ilo0=1'
   },
   {
     id: 1,
     title: 'Multi Step Form',
-    image: MultiStepImage,
-    text: 'React project',
+    image: MultiStep1,
+    text: 'Desenvolvimento',
     link: 'multi-step-form',
     description: 'Formulário com etapas (multi-step) desenvolvido como solução para desafio do Frontend Mentor construído com React + TypeScript e estilizado com SASS. Utilizando Formik & yup para validação de formulários',
     imagesMobile: [
@@ -162,13 +205,31 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/multi-step-form',
     sitePreview: 'https://multi-step-form-five-rose.vercel.app/',
-    bgColor: '#EEF8FF'
+    bgColor: '#EEF8FF',
+    areas: ['devlopment']
+  },
+  {
+    id: 15,
+    title: 'Social media, custom made fornitue',
+    image: MoveisBanner,
+    text: 'Desing gráfico',
+    link: 'social-media-custom',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['design'],
+    iframeCod: 'https://www.behance.net/embed/project/143936987?ilo0=1'
   },
   {
     id: 2,
     title: 'Eccomerce TechDay Carrefour',
-    image: EccomerceTechDay,
-    text: 'React project',
+    image: TechDayCarrefour1,
+    text: 'Desenvolvimento',
     link: 'eccomerce-techday-carrefour',
     description: 'Desenvolvido para o Carrefour Tech Day da Digital Innovation One. Utilizando de uma das APIs do Carrefour para o desenvolvimento de um site ecommerce. Construído com React + TypeScript e styled-components para estilização.',
     imagesMobile: [
@@ -192,13 +253,14 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/ecommerce-carrefour-tech-day-dio',
     sitePreview: 'https://ecommerce-carrefour-tech-day-dio.vercel.app/',
-    bgColor: '#fff'
+    bgColor: '#fff',
+    areas: ['devlopment']
   },
   {
     id: 3,
     title: 'Calculator Multi Themes',
-    image: CalculatorMultiThemes,
-    text: 'Javascript Project',
+    image: CalculatorMultiThemes1,
+    text: 'Desenvolvimento',
     link: 'calculator-multi-themes',
     description: 'Calculadora multi temas desenvolvido como solução para o desafio Calculator app do Frontend Mentor.',
     imagesMobile: [
@@ -219,13 +281,48 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/calculator-app-main',
     sitePreview: 'https://sycrot.github.io/calculator-app-main/',
-    bgColor: '#314565'
+    bgColor: '#314565',
+    areas: ['devlopment']
+  },
+  {
+    id: 13,
+    title: 'Clothing Store',
+    image: ModeloClothing,
+    text: 'Desing gráfico',
+    link: 'clothing-store',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['design'],
+    iframeCod: 'https://www.behance.net/embed/project/114059155?ilo0=1'
+  },
+  {
+    id: 12,
+    title: 'Burger Master - Motion',
+    image: BurgerMasterMotion,
+    text: 'Motion design',
+    link: 'burger-master-motion',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['video-design'],
+    iframeCod: 'https://www.behance.net/embed/project/113616257?ilo0=1'
   },
   {
     id: 4,
     title: 'GitHub user search',
-    image: GitHubUserSearch,
-    text: 'Javascript Project',
+    image: GitHubUser1,
+    text: 'Desenvolvimento',
     link: 'github-user-search',
     description: 'Site de procura de usuários do GitHub',
     imagesMobile: [
@@ -246,13 +343,14 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/github-user-search',
     sitePreview: 'https://sycrot.github.io/github-user-search/',
-    bgColor: '#07162C'
+    bgColor: '#07162C',
+    areas: ['devlopment']
   },
   {
     id: 5,
     title: 'Tip Calculator',
-    image: TipCalculator,
-    text: 'Javascript Project',
+    image: TipCalculator1,
+    text: 'Desenvolvimento',
     link: 'tip-calculator',
     description: 'Calculadora de gorjetas. Calcula o um total de gorjetas de acordo com a porcentagem e divide o valor entre cada pessoa',
     imagesMobile: [
@@ -267,7 +365,25 @@ export const posts = [
     ],
     repository: 'https://github.com/sycrot/tip_calculator_app',
     sitePreview: 'https://sycrot.github.io/tip_calculator_app/',
-    bgColor: '#B9E6E9'
+    bgColor: '#B9E6E9',
+    areas: ['devlopment']
+  },
+  {
+    id: 10,
+    title: 'Banner Social Media Sport',
+    image: BannerSocialMediaSport,
+    text: 'Design gráfico',
+    link: 'banner-social-media-sport',
+    description: '',
+    imagesMobile: [
+    ],
+    imagesDesktop: [
+    ],
+    repository: '',
+    sitePreview: '',
+    bgColor: '#B9E6E9',
+    areas: ['design'],
+    iframeCod: 'https://www.behance.net/embed/project/113504907?ilo0=1'
   },
 ]
 

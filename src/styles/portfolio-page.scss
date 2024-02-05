@@ -1,0 +1,113 @@
+.portfolio-page {
+  padding-top: 64px;
+  margin-bottom: 90px;
+
+  @media screen and (min-width: $min-width) {
+    margin-bottom: 107px;
+    padding-top: 81px;
+  }
+
+  .header-title {
+    background: $color-darkblue;
+    padding: 81px 0;
+    border-radius: 0 0 18px 18px;
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .text {
+      width: fit-content;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-size: 54px;
+        color: $color-blue;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 0;
+
+        @media screen and (max-width: $min-width) {
+          font-size: 44px;
+        }
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $color-lightgray;
+        position: absolute;
+        left: -25px;
+
+        @media screen and (max-width: $min-width) {
+          width: 53px;
+          height: 53px;
+          left: -18px;
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-top: 107px;
+
+    @media screen and (max-width: $min-width) {
+      margin-top: 90px;
+    }
+
+    .submenu {
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      margin-bottom: 65px;
+
+      @media screen and (max-width: $min-width) {
+        flex-direction: column;
+        margin-bottom: 35px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-whiteblue;
+        font-size: 16px;
+        display: block;
+
+        &.active {
+          color: $color-marineblue;
+          font-weight: bold;
+
+          &::after {
+            content: '';
+            display: block;
+            width: 70%;
+            height: 2px;
+            background: $color-marineblue;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: scaleBottomBorder .4s;
+
+            @media screen and (max-width: $min-width) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      @keyframes scaleBottomBorder {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

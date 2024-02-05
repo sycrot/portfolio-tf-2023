@@ -1,10 +1,9 @@
 import HeaderBanner from "@/components/header-banner";
 import Aboutme from "./aboutme";
-import Portfolio from "./portfolio";
 import Skills from "./skills";
 import MyServices from "./my-services";
-import Footer from "./footer";
 import PortfolioCard from "@/components/portfolio-card";
+import Contactme from "@/components/contatcme";
 
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
       <Skills />
       <PortfolioCard />
       <MyServices />
-      <Footer />
+      <Contactme />
     </main>
   )
 }

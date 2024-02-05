@@ -43,6 +43,10 @@ p {
   color: $color-marineblue;
 }
 
+.color-whiteblue {
+  color: $color-whiteblue;
+}
+
 .text-justify {
   text-align: justify !important;
 }
@@ -52,13 +56,16 @@ p {
     0% {
       background-position: 0% 50%;
     }
+
     50% {
       background-position: 100% 50%;
     }
+
     100% {
       background-position: 0% 50%;
     }
   }
+
   background: linear-gradient(90deg, rgba(10, 114, 207, 1), rgb(99, 163, 231), rgb(20, 122, 211), rgb(42, 115, 179));
   background-clip: text;
   background-size: 250% 250%;
@@ -163,7 +170,7 @@ p {
     position: absolute;
     left: -72px;
     border-radius: 50%;
-    background: $color-blue;
+    background: $color-lightgray;
     margin-right: 3px;
 
     @media screen and (min-width: $min-width) {
@@ -172,7 +179,7 @@ p {
   }
 
   h1 {
-    color: #fff;
+    color: $color-whiteblue;
     font-size: 36px;
     font-weight: 700;
     font-family: 'Kanit', sans-serif;
@@ -193,66 +200,101 @@ p {
   width: 25px;
   height: 25px;
   display: block;
-  background: url('/assets/images/plus-icon.png') 90% no-repeat, $color-simpleblue 100%;
+  background: url('/assets/images/plus-icon.png') 90% no-repeat, $color-marineblue 100%;
   background-position: center;
   border-radius: 50%;
 }
 
 .portfolio-item {
-  @keyframes portfolioItem {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
   width: 100%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
   margin-bottom: 34px;
   cursor: pointer;
-  animation: portfolioItem .5s;
+  animation: portfolioItem .5s ease-in;
+  position: relative;
+  height: 269px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, rgb(20, 66, 114) 20%, transparent);
+  }
+
+  @media screen and (min-width: $min-width) {
+    height: 269px;
+  }
+
+  &:hover {
+    .image-portfolio {
+      transform: scale(1.04);
+    }
+  }
 
   .image-portfolio {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .4s;
 
     .content {
       width: 100%;
-      transition: all .2s ease-in-out;
-
-      &:hover {
-        transform: scale(1.02);
-      }
-
-      
+      height: 100%;
+      margin-top: 0;
     }
 
     img {
       width: 100%;
       height: inherit;
-    }
-
-    @media screen and (min-width: $min-width) {
-      max-height: 269px;
+      object-fit: cover;
     }
   }
 
   .content-texts {
     margin-top: 12px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    bottom: 20px;
+    padding: 0 17px;
+    transition: all .4s;
 
     &:hover {
-      text-decoration: underline;
+      filter: brightness(.9);
+    }
+
+    .texts {
+      width: 100%;
     }
 
     .title-project {
       font-size: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
 
       @media screen and (min-width: $min-width) {
         font-size: 18px;
       }
     }
+  }
+}
+
+@keyframes portfolioItem {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -361,11 +403,50 @@ p {
   }
 }
 
+.sharebutton {
+  background: none;
+  display: flex;
+  border: none;
+  align-items: center;
+  gap: 14px;
+  justify-content: end;
+  margin-top: 50px;
+  margin-right: 10px;
+  transition: all .4s;
+
+  img {
+    transition: all .4s;
+  }
+
+  &:hover {
+    filter: brightness(.9);
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $color-blue;
+    font-weight: bold;
+  }
+}
+
+.toast {
+  width: inherit !important;
+  padding: 0 10px;
+  background: $color-blue-24 !important;
+  color: $color-whiteblue !important;
+  border: none !important;
+}
+
 @keyframes bubleAnimation {
   from {
     opacity: 0;
     transform: scale(0);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -376,9 +457,11 @@ p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

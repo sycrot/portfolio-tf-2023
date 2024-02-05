@@ -27,7 +27,7 @@ export default function Nav() {
                 <a className="nav-link" aria-current="page" href="/#aboutme">Sobre mim</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#portfolio">Portfolio</a>
+                <a className="nav-link" href="/portfolio">Portfolio</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/#skills">Habilidades</a>

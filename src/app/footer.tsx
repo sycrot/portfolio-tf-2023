@@ -6,7 +6,6 @@ import Contactme from "@/components/contatcme";
 export default function Footer() {
   return (
     <footer>
-      <Contactme />
       <div className="footer-content">
         <div className="container">
           <div className="row">

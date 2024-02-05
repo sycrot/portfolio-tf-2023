@@ -4,6 +4,7 @@ import Nav from "@/components/navbar"
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/app.scss'
 import React from "react"
+import Footer from "./footer"
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
         <title>Thiago Farias</title>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -27,8 +27,8 @@ export default function ProjectItem(props: Props) {
 
       <div className="content-texts d-flex justify-content-between">
         <div className="texts">
-          <p className="title-project mb-0 color-simpleblue fw-medium">{props.title}</p>
-          <span className="mb-0 fw-light color-gray">{props.text}</span>
+          <p className="title-project mb-0 color-marineblue fw-medium">{props.title}</p>
+          <span className="mb-0 fw-light color-whiteblue">{props.text}</span>
         </div>
         <Link href={`/project/${props.link}`} className="button-more-blue mt-2"></Link>
 

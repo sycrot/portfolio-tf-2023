@@ -105,7 +105,7 @@ const skillsDesing: Skills[] = [
   },
   {
     name: 'Adobe Illustrator',
-    level: 3,
+    level: 2,
     image: Illustrator
   },
   {
@@ -123,7 +123,7 @@ const skillsVideoEdit: Skills[] = [
   },
   {
     name: 'Adobe After Effects',
-    level: 3,
+    level: 2,
     image: AfterEffects
   },
 ]
