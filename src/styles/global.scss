@@ -437,11 +437,23 @@ p {
 }
 
 .toast {
-  width: inherit !important;
   padding: 0 10px;
   background: $color-blue-24 !important;
   color: $color-whiteblue !important;
   border: none !important;
+
+  .toast-header {
+    background: $color-blue-24 !important;
+    color: $color-whiteblue !important;
+
+    .btn-close {
+      color: $color-whiteblue !important;
+    }
+  }
+}
+
+.toast-left {
+  width: inherit !important;
 }
 
 @keyframes bubleAnimation {

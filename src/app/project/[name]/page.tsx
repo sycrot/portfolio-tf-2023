@@ -185,7 +185,7 @@ export default function Project() {
       </div>
 
       <ToastContainer position="bottom-start" className="position-fixed ms-5 mb-5">
-        <Toast onClose={() => setShowAlert(false)} show={showAlert} delay={1500} autohide>
+        <Toast onClose={() => setShowAlert(false)} show={showAlert} delay={1500} autohide className="toast-left">
           <Toast.Body>Link copiado para área de transferência</Toast.Body>
         </Toast>
       </ToastContainer>
