@@ -33,6 +33,7 @@
       transition: all .4s;
       line-height: 110%;
       opacity: 0;
+      color: $color-whiteblue;
 
       @media screen and (max-width: $min-width) {
         opacity: 1;
@@ -75,6 +76,7 @@
 
       &:hover {
         filter: brightness(.9);
+
         img {
           transform: scale(1.06);
         }

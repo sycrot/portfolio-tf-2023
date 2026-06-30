@@ -12,6 +12,7 @@
 
   .nav-tabs {
     border-bottom: 2px solid $color-simpleblue-4;
+
     .nav-item {
       button {
         background: none;
@@ -21,6 +22,7 @@
         font-weight: bold;
         color: $color-simpleblue-4;
         margin-bottom: -2px;
+
         &.active {
           background: none;
           color: $color-marineblue;
@@ -36,17 +38,18 @@
       background: none;
       border: none;
     }
+
     border: none;
     background: none;
 
-    --bs-accordion-border-width: 0;    
+    --bs-accordion-border-width: 0;
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
 
     .accordion-header {
       background: none;
       border: none;
       border-bottom: 2px solid $color-simpleblue-4;
-      
+
       button {
         background: none;
         border: none;
@@ -92,12 +95,14 @@
         &:hover {
           .box-level {
             &::after {
-              color: $color-superlight-blue;
-              background: $color-blue-24;
+              color: var(--text-color);
+              background: var(--color-blue-24);
               animation: bubleAnimation .3s ease-in;
+              box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.027);
             }
+
             &::before {
-              background: $color-blue-24;
+              background: var(--color-blue-24);
               animation: opacityAnimation .4s ease-in;
             }
           }
@@ -259,7 +264,7 @@
       width: 45px;
       height: 20px;
       border-radius: 4px;
-      background: $color-blue-24;
+      background: var(--color-blue-24);
     }
 
     .box-level-1 {

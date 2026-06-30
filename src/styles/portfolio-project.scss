@@ -1,19 +1,32 @@
 #projectPortfolio {
   margin-bottom: 90px;
+
   @media screen and (min-width: $min-width) {
     margin-bottom: 107px;
   }
+
   .iframe-content {
     height: 500px;
     overflow: hidden;
     border-radius: 14px;
   }
+
   .header-project {
     background-color: $color-darkblue;
     padding: 64px 0 48px;
     border-radius: 0 0 18px 18px;
     margin-bottom: 64px;
     overflow: hidden;
+
+    .title-portfolio-project {
+      &::before {
+        background: $color-lightgray;
+      }
+
+      h1 {
+        color: $color-blue;
+      }
+    }
 
     @media screen and (min-width: $min-width) {
       padding: 117px 0 48px;
@@ -86,6 +99,7 @@
     .react-transform-wrapper {
       width: 100%;
       height: 100%;
+
       .react-transform-component {
         width: 100%;
         height: 100%;
@@ -103,6 +117,7 @@
   }
 
   .carousel {
+
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
       width: 40px;
@@ -110,7 +125,7 @@
       background-color: #394867;
       border-radius: 50%;
       background-size: 60%;
-      box-shadow: 0 0 10px rgba(0,0,0,.4);
+      box-shadow: 0 0 10px rgba(0, 0, 0, .4);
     }
 
     .carousel-control-prev-icon {
@@ -136,6 +151,7 @@
 
     .carousel-indicators {
       bottom: 10px;
+
       button {
         width: 18px;
         height: 18px;

@@ -12,10 +12,6 @@
     }
   }
 
-  p {
-    color: $color-whiteblue;
-  }
-
   .content {
     max-width: 945px;
     margin-left: 0;
@@ -25,6 +21,7 @@
 
     .row {
       position: relative;
+
       @media screen and (min-width: $min-width) {
         &::after {
           content: url('/assets/images/aboutme-l.png');
@@ -48,13 +45,14 @@
       display: block;
       width: 22px;
       height: 100%;
-      background: $color-superdarkblue;
+      background: var(--color-super-dark-blue);
       margin-top: 5px;
       right: inherit;
     }
 
     &:nth-child(4) {
       padding-left: 24px;
+
       &::before {
         display: none;
       }
@@ -84,6 +82,7 @@
     @media screen and (min-width: $min-width) {
       padding-bottom: 0;
     }
+
     .timeline-year {
       display: flex;
       align-items: center;
@@ -92,7 +91,7 @@
       span {
         margin-left: 4px;
         font-size: 18px;
-        color: $color-whiteblue;
+        color: var(--text-color);
         font-weight: 500;
         font-family: 'Kanit', sans-serif;
       }

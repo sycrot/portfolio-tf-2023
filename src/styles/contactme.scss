@@ -3,14 +3,27 @@
   padding: 130px 0 115px;
   margin-top: 107px;
 
+  .title-section {
+    &::before {
+      background: $color-lightgray;
+    }
+
+    h2 {
+      color: $color-blue;
+    }
+  }
+
   form {
-    .form-floating > label {
+    .form-floating>label {
       color: $color-superlightgray-2;
+
       &::after {
         background: $color-darkblue-4;
       }
     }
-    input, textarea {
+
+    input,
+    textarea {
       border: none;
       outline: none;
       background: $color-darkblue-4;
@@ -28,12 +41,15 @@
       color: $color-marineblue;
       font-weight: bold;
     }
+
     h5 {
       font-size: 24px;
       color: $color-marineblue;
       font-weight: normal;
     }
-    p, a {
+
+    p,
+    a {
       color: $color-superlight-blue;
     }
   }
