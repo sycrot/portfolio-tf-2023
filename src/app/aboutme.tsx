@@ -111,7 +111,7 @@ export default function Aboutme() {
               {TimelineContent("2017", "Trabalhei como designer gráfico, editor de vídeo, motion design e social media utilizando as habilidades que havia adquirido ao longo da vida, e iniciei meus estudos com desenvolvimento e programação.", boxVariant, yearVariant)}
               {TimelineContent("2020", "Graduação em ADS (Análise e Desenvolvimento de Sistemas) com foco em desenvolvimento web e por cerca de dois anos trabalhei como freelancer com design gráfico, edição de vídeos e desenvolvimento frontend.", boxVariant2, yearVariant2)}
               {TimelineContent("2022", "Após estudar bastante tecnologia e desenvolvimento, consegui meu primeiro emprego em julho como desenvolvedor fullstack e logo depois, em setembro migrei para outra empresa atuando como desenvolvedor frontend.", boxVariant3, yearVariant3)}
-              {TimelineContent("2023", "Iniciei no cargo de desenvolvedor web, trabalhando com desenvolvimento de webparts para Sharepoint e atuando no desenvolvimento fullstack de aplicações web", boxVariant4, yearVariant4)}
+              {TimelineContent("2023", "Iniciei no cargo de desenvolvedor web, trabalhando com desenvolvimento de webparts para Sharepoint e atuando no desenvolvimento fullstack de aplicações web.", boxVariant4, yearVariant4)}
             </div>
 
             <motion.div

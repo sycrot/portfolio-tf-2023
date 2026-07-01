@@ -19,12 +19,16 @@ export default function Nav() {
               priority
             />
           </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <Image
-              src={MenuIcon}
-              alt="Menu icon"
-            />
-          </button>
+          <div className="d-flex justify-content-end align-items-center">
+            <button className="navbar-theme-toggle d-lg-none" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}><VscColorMode width={50} height={50} /></button>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <Image
+                src={MenuIcon}
+                alt="Menu icon"
+              />
+            </button>
+          </div>
+
           <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -42,11 +46,10 @@ export default function Nav() {
               <li className="nav-item">
                 <a className="nav-link" href="/#contactMe">Contate-me</a>
               </li>
-              <li className="nav-item">
-                <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}><VscColorMode width={50} height={50} /></button>
-              </li>
             </ul>
           </div>
+
+          <button className="navbar-theme-toggle d-none d-lg-block" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}><VscColorMode width={50} height={50} /></button>
         </div>
       </nav>
     </>
